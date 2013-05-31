@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 
@@ -27,5 +28,7 @@ namespace MigrationsDemo
 
         public int BlogId { get; set; }
         public Blog Blog { get; set; }
+
+        public DateTime DatePublished { get; set; }
     }  
 }
